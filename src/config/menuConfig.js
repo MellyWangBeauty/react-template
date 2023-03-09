@@ -179,8 +179,8 @@ const menuList = [
     roles: ["admin"],
   },
   {
-    title: "Test测试",
-    path: "/test",
+    title: "对象存储",
+    path: "/bucket",
     icon: "user",
     roles: ["admin"],
   },

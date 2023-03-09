@@ -114,8 +114,8 @@ const Bug = Loadable({
   loader: () => import(/*webpackChunkName:'Bug'*/ "@/views/bug"),
   loading: Loading,
 });
-const Test = Loadable({
-  loader: () => import("@/views/test"),
+const Bucket = Loadable({
+  loader: () => import("@/views/bucket"),
   loading: Loading,
 });
 
@@ -175,6 +175,6 @@ export default [
   { path: "/user", component: User, roles: ["admin"] },
   { path: "/about", component: About, roles: ["admin", "editor", "guest"] },
   { path: "/bug", component: Bug, roles: ["admin"] },
-  { path: "/test", component: Test, roles: ["admin"] },
+  { path: "/bucket", component: Bucket, roles: ["admin"] },
   { path: "/error/404", component: Error404 },
 ];
